@@ -8,7 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   </head>
-  <body>
-    <h1>Dolla Dolla Bills Y'all</h1>
+  <body ng-app>
+    <h1>Dolla Dolla Bills Y'all {{3 + 4}}</h1>
+    <h2>I believe {{"it's " + "magic"}}</h2>
+    <h3>I believe {{"it's " + "magic"}}</h3>
+    <h4>I believe {{"it's " + "magic"}}</h4>
+    <h5>{{"magic"}}</h5>
+    <p>
+      the number {{3+4}}
+    </p>
+    <p>
+      Are strings and numbers equal? Does '2' = = 2?  {{'2' == 2}}
+    </p>
+    <h1>Did you see {{"that?!?"}}</h1>
+    <h1>This is so cool</h1>
+    <h2>Watch what happens when I replace == with === in my HTML:</h2>
+    <h3>Is '2' = = = 2 equal?: {{'2' === 2}}</h3>
+    <h1 style="font-size: 12em; color: red;">{{"SHAZAAAAAAAM!!"}}</h1>
+
+    <h1>ng-bind</h1>
+    <h2>Let's see what it does!</h2>
+    <p>
+      The Number <span ng-bind="3 + 4"></span>
+    </p>
+    <footer>
+      <h6>{{"Angular" + "js".toUpperCase()}}</h6>
+    </footer>
   </body>
 </html>
